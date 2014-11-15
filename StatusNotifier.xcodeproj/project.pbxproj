@@ -21,6 +21,7 @@
 		20EA7CD11A164FE000993690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EA7CB31A164FE000993690 /* UIKit.framework */; };
 		20EA7CD91A164FE000993690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20EA7CD71A164FE000993690 /* InfoPlist.strings */; };
 		20EA7CDB1A164FE000993690 /* StatusNotifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EA7CDA1A164FE000993690 /* StatusNotifierTests.m */; };
+		20EA7CE71A16505A00993690 /* PRNStatusNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EA7CE61A16505A00993690 /* PRNStatusNotifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		20EA7CD61A164FE000993690 /* StatusNotifierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatusNotifierTests-Info.plist"; sourceTree = "<group>"; };
 		20EA7CD81A164FE000993690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20EA7CDA1A164FE000993690 /* StatusNotifierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusNotifierTests.m; sourceTree = "<group>"; };
+		20EA7CE51A16505A00993690 /* PRNStatusNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRNStatusNotifier.h; sourceTree = "<group>"; };
+		20EA7CE61A16505A00993690 /* PRNStatusNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRNStatusNotifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		20EA7CB51A164FE000993690 /* StatusNotifier */ = {
 			isa = PBXGroup;
 			children = (
+				20EA7CE41A16502900993690 /* StatusNotifier */,
 				20EA7CBE1A164FE000993690 /* PRNAppDelegate.h */,
 				20EA7CBF1A164FE000993690 /* PRNAppDelegate.m */,
 				20EA7CC11A164FE000993690 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				20EA7CD71A164FE000993690 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20EA7CE41A16502900993690 /* StatusNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				20EA7CE51A16505A00993690 /* PRNStatusNotifier.h */,
+				20EA7CE61A16505A00993690 /* PRNStatusNotifier.m */,
+			);
+			path = StatusNotifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +265,7 @@
 			files = (
 				20EA7CBC1A164FE000993690 /* main.m in Sources */,
 				20EA7CC01A164FE000993690 /* PRNAppDelegate.m in Sources */,
+				20EA7CE71A16505A00993690 /* PRNStatusNotifier.m in Sources */,
 				20EA7CC61A164FE000993690 /* PRNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

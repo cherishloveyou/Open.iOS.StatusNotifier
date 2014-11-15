@@ -7,9 +7,12 @@
 //
 
 #import "PRNViewController.h"
+#import "PRNStatusNotifier.h"
 
 @interface PRNViewController ()
-
+{
+    PRNStatusNotifier *notifier;
+}
 @end
 
 @implementation PRNViewController
@@ -17,13 +20,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	notifier = [[PRNStatusNotifier alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)showNotifier:(id)sender {
+    
+    [notifier showWithMessage:@"hello"];
 }
 
 @end
